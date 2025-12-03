@@ -12,4 +12,6 @@ urlpatterns = [
     path("comp", views.comp),
     path("bootstrap", views.navigation),
     path("addauthor", views.addauth),
+    path("addbook", views.addbook),
+
 ]
