@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1>holidays</h1>
+    <table style="border: solid">
+    {% for m,h in months %}
+        <tr style="border: solid">
+        <td
+            {% if h != ""%}
+                style="color:red">
+            {% else %}
+                >
+            {% endif %}
+            {{ m }}</td>
+            <td>{{ h }}</td>
+        </tr>
+    {% endfor %}
+
+
+    </table>
+</body>
+</html>
